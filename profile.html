@@ -61,6 +61,12 @@
       .carousel-item-prev {
       display: block;
       }
+      .img { 
+	  max-width: 100%; 
+	  height: 100%;
+      padding:1px;
+      border:1px solid #021a40;	  
+	  }
     </style>
   </head>
   <nav class="navbar navbar-expand-md navbar-light top bg-light">
@@ -101,12 +107,17 @@
         <p><a href="http://www.schaltbau-gmbh.com/">Schaltbau</a> was established over 80 years ago in Munich, Germany. Our product lines include contactors, snap-action switches, connectors and electrical systems for railway applications. We continue to maintain manufacturing and assembly facilities for all our products at two locations in Germany and are certified to the highest quality standards including <a href="http://www.schaltbau-gmbh.com/en/Quality-and-Environment/">ISO and IRIS</a>. 
         <p>Based in Hauppauge, NY, our North American location can provide value-added capabilities such as technical support, engineering services, light assembly, kitting and distribution.
         <p>More information can be found on our <a href="http://www.schaltbau-gmbh.com/en/">website</a>.</p>
-        </p>
       </div>
-	  <!--end container-->
+      <!--end container-->
     </div>
-	<!--end jumbotron-->
+    <!--end jumbotron-->
     <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <a href="images/161.jpg" target="_blank"><img class="img" src="images/161.jpg" alt="Generic placeholder image" title="Click to enlarge" width = "640" height = "440"></a>
+        </div>
+        <!--end col-->
+      </div>
       <div class="row">
         <div class="col">
           <ul class="list-inline">
@@ -131,30 +142,23 @@
       <div class="container marketing text-center">
         <div class="row">
           <div class="col-lg-4">
-            <img class="img-fluid" src="images/003.jpg" alt="Generic placeholder image" width="440" height="440">
+            <a href="images/003.jpg" target="_blank"><img class="img" src="images/003.jpg" target="_blank" title="Click to enlarge" width="440" height="440"></a>
           </div>
           <!--end col-->
           <div class="col-lg-4">
-            <img class="img-fluid" src="images/357.jpg" alt="Generic placeholder image" width="440" height="440">
+            <a href="images/357.jpg" target="_blank"><img class="img" src="images/357.jpg" target="_blank" title="Click to enlarge" width="440" height="440"></a>
           </div>
           <!--end col-->
           <div class="col-lg-4">
-            <img class="img-fluid" src="images/144.jpg" alt="Generic placeholder image" width="440" height="440">
+            <a href="images/144.jpg" target="_blank"><img class="img" src="images/144.jpg" target="_blank" title="Click to enlarge" width="440" height="440"></a>
           </div>
           <!--end col-->
-        </div>
-        <!--end row-->
-        <div class="row">
-          <div class="col-lg-12">
-            <img class="img-fluid" src="images/161.jpg" alt="Generic placeholder image" height = "440">
-          </div>
-		  <!--end col-->
         </div>
         <!--end row-->
       </div>
-	  <!--end container marketing text-center-->
+      <!--end container marketing text-center-->
     </div>
-	<!--end container-->
+    <!--end container-->
     <hr>
     <div class="jumbotron-fluid">
       <div class="container-fluid no-padding">
@@ -166,9 +170,9 @@
         </div>
         </p>
       </div>
-	  <!--end container-fluid no-padding-->
+      <!--end container-fluid no-padding-->
     </div>
-	<!--end jumbotron-fluid-->
+    <!--end jumbotron-fluid-->
     <div class="container">
       <hr>
       <footer>
@@ -185,5 +189,27 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	   setCarouselHeight('#carousel-example');
+
+    function setCarouselHeight(id)
+    {
+        var slideHeight = [];
+        $(id+' .item').each(function()
+        {
+            // add all slide heights to an array
+            slideHeight.push($(this).height());
+        });
+
+        // find the tallest item
+        max = Math.max.apply(null, slideHeight);
+
+        // set the slide's height
+        $(id+' .carousel-content').each(function()
+        {
+            $(this).css('height',max+'px');
+        });
+    }
+	</script>
   </body>
 </html>
