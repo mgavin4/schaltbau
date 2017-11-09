@@ -8,6 +8,10 @@ html, body{
       h2 {
       display: inline;
       }
+	  .img-fluid{
+	   padding:1px;
+       border:1px solid #021a40;
+	  }
       .jumbotron{
       background-image: url("../images/Q Train.jpg");
       background-size: cover;

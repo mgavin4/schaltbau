@@ -38,7 +38,7 @@
          1px 1px 0 #000; 
          font-weight: bold;
          font-size: 4em; 
-         font-size: 4vw;
+         font-size: 5vw;
          }
          .text-image {
          position: relative;
@@ -47,7 +47,7 @@
          .caption{
          position: absolute;
          text-align: center;
-		 top: 94%;
+		 top: 40%;
 	     left: 50%;
          bottom:0;
          width:100%;
@@ -59,7 +59,7 @@
          1px 1px 0 #000; 
          font-weight: bold;
          font-size: 4em; 
-         font-size: 130%;
+         font-size: 140%;
 		 transform: translate(-50%, -50%);
          }
 		 
