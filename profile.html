@@ -32,12 +32,12 @@
       <!--end container-->
       <div class="container">
         <div class="row text-center">
-          <div class="col-lg-12">
-            <a class="ProfileLightbox" href="Images/161.jpg" data-lightbox="Profile Set" data-title="C294 Series">
-            <img class="img" src="Images/161.jpg" title="Click to enlarge" width = "640" height = "440">
-            </a>
-            <div class="caption center-block">C294 Series</div>
-          </div>
+            <div class="col-lg-12">
+              <a class="ProfileLightbox" href="Images/161.jpg" data-lightbox="Profile Set" data-title="C294 Series">
+                <img class="img mt-4" src="Images/161.jpg" title="Click to enlarge">
+                <div class="caption center-block">C294 Series</div>
+              </a>
+            </div>
           <!--end col-->
         </div>
       </div>
@@ -67,37 +67,37 @@
           </ul>
         </div>
       </div>
-      <div class="container marketing text-center">
-        <div class="row">
-          <div class="col-lg-4">
-            <a class="ProfileLightbox" href="Images/003.jpg" data-lightbox="Profile Set" data-title="C195 Series">
-            <img class="img" src="Images/003.jpg" title="Click to enlarge" width="440" height="440">
-            </a>
-            <div class="caption center-block">C195 Series</div>
+        <div class="container marketing text-center">
+          <div class="row">
+            <div class="col-lg-4">
+              <a class="ProfileLightbox" href="Images/003.jpg" data-lightbox="Profile Set" data-title="C195 Series">
+                <img class="img mt-4" src="Images/003-2.jpg" title="Click to enlarge">
+                <div class="caption center-block">C195 Series</div>
+              </a>
+            </div>
+            <!--end col-->
+			            <div class="col-lg-4">
+              <a class="ProfileLightbox" href="Images/144.jpg" data-lightbox="Profile Set" data-title="C193 Series">
+                <img class="img mt-4" src="Images/144-2.jpg" title="Click to enlarge">
+                <div class="caption center-block">C193 Series</div>
+              </a>
+            </div>
+            <!--end col-->
+            <div class="col-lg-4">
+              <a class="ProfileLightbox" href="Images/357.jpg" data-lightbox="Profile Set" data-title="CT Series">
+                <img class="img mt-4" src="Images/357-2.jpg" title="Click to enlarge">
+                <div class="caption center-block">CT Series</div>
+              </a>
+            </div>
+            <!--end col-->
           </div>
-          <!--end col-->
-          <div class="col-lg-4">
-            <a class="ProfileLightbox" href="Images/357.jpg" data-lightbox="Profile Set" data-title="CT Series">
-            <img class="img" src="Images/357.jpg" title="Click to enlarge" width="440" height="440">
-            </a>
-            <div class="caption center-block">CT Series</div>
-          </div>
-          <!--end col-->
-          <div class="col-lg-4">
-            <a class="ProfileLightbox" href="Images/144.jpg" data-lightbox="Profile Set" data-title="C193 Series">
-            <img class="img" src="Images/144.jpg" title="Click to enlarge" width="440" height="440">
-            </a>
-            <div class="caption center-block">C193 Series</div>
-          </div>
-          <!--end col-->
+          <!--end row-->
         </div>
-        <!--end row-->
-      </div>
+        <!--end container marketing text-center-->
       <!--end container marketing text-center-->
     </div>
     <!--end container-->
-    <hr>
-    <div class="jumbotron-fluid">
+    <div class="jumbotron-fluid mt-4">
       <div class="text-image">
         <div class="container-fluid no-padding">
           <img class="img-fluid" src="Images/Windmill.jpg" alt="">
@@ -109,48 +109,18 @@
       <!--end container-fluid no-padding-->
     </div>
     <!--end jumbotron-fluid-->
-    <div class="container">
-      <footer>
-        <p>
-        <center>
-          <p>Need help? Please call us for technical assistance at 631-351-6993, Ext. 2</p>
-          <p>Interested in a price inquiry? Please email us at sales@schaltbau-na.com</p>
-          <p>Live phone support is available from Monday - Friday,  8:00am - 4:30pm EST.</p>
-        </center>
-        </p>
-      </footer>
-    </div>
+	<div id="footer-placeholder">
+	</div>
     <!--end container-->
     <!--<script src="js/jquery-1.11.0.min.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<script>
-      setCarouselHeight('#carousel-example');
-      
-      function setCarouselHeight(id)
-      {
-          var slideHeight = [];
-          $(id+' .item').each(function()
-          {
-              // add all slide heights to an array
-              slideHeight.push($(this).height());
-          });
-      
-          // find the tallest item
-          max = Math.max.apply(null, slideHeight);
-      
-          // set the slide's height
-          $(id+' .carousel-content').each(function()
-          {
-              $(this).css('height',max+'px');
-          });
-      }
-      </script>-->
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script>
       $(function(){
       	$("#nav-placeholder").load("navigation.html");
+		$("#footer-placeholder").load("footer.html");
       });
     </script>
   </body>
