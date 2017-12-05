@@ -31,6 +31,10 @@
          .img-fluid {
          display: block;
          }
+		 .col-centered{
+    float: none;
+    margin: 0 auto;
+}
          .caption-image {
          position: absolute;
          top: 50%;
