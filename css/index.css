@@ -2,14 +2,15 @@
       margin:0px;
       padding:0px;
       }
-	  .img-fluid { 
+      .img-fluid { 
+      display: block;
       padding:1px;
       border:1px solid #021a40;	  
       }
       .caption{
       position: absolute;
       text-align: center;
-	  top: 39%;
+	  top: 40%;
 	  left: 50%;
       bottom:0;
       width:100%;
@@ -23,4 +24,8 @@
       font-size: 4px; 
       font-size: 130%;
 	  transform: translate(-50%, -50%);
+      }
+	  img.center {
+      display: block;
+      margin: 0 auto;
       }
